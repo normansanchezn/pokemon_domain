@@ -1,7 +1,7 @@
 import Foundation
 import pokemon_shared
 
-public struct FetchPokemonListImpl: FetchPokemonList {
+public struct FetchPokemonListUseCaseImpl: FetchPokemonListUseCase {
     private let pokemonRepository: PokemonRepository
 
     public init(pokemonRepository: PokemonRepository) {

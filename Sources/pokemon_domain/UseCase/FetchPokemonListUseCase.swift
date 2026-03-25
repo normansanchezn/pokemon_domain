@@ -8,6 +8,6 @@
 import Foundation
 import pokemon_shared
 
-public protocol FetchPokemonList {
+public protocol FetchPokemonListUseCase: Sendable {
     func execute() async throws -> [Pokemon]
 }

@@ -8,6 +8,6 @@
 import Foundation
 import pokemon_shared
 
-public protocol PokemonRepository {
+public protocol PokemonRepository: Sendable {
     func fetchPokemonList() async throws -> [Pokemon]
 }
