@@ -21,7 +21,7 @@ let package = Package(
     ],
     dependencies: [
         // If pokemon_shared is a local package in your workspace, adjust the path accordingly.
-        .package(name: "pokemon_shared", path: "../pokemon_shared"),
+        .package(name: "pokemon_shared", path: "../pokemon_shared")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
