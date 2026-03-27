@@ -8,7 +8,7 @@ public struct FetchPokemonListUseCaseImpl: FetchPokemonListUseCase {
         self.pokemonRepository = pokemonRepository
     }
 
-    public func execute() async throws -> [Pokemon] {
-        try await pokemonRepository.fetchPokemonList()
+    public func execute(limit: Int, offset: Int) async throws -> [Pokemon] {
+        try await pokemonRepository.fetchPokemonList(limit: limit, offset: offset)
     }
 }

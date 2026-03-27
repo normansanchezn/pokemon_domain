@@ -9,5 +9,5 @@ import Foundation
 import pokemon_shared
 
 public protocol FetchPokemonListUseCase: Sendable {
-    func execute() async throws -> [Pokemon]
+    func execute(limit: Int, offset: Int) async throws -> [Pokemon]
 }
